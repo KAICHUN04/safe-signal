@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  body {
+    @apply h-full bg-[#070B1A] text-slate-100 antialiased;
+  }
+
+  html.light body {
+    @apply bg-slate-50 text-slate-900;
+  }
+
+  /* Neon selection */
+  ::selection {
+    background: rgba(99, 102, 241, 0.35);
+  }
+}
+
+@layer components {
+  .bg-grid {
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  .neon-ring {
+    box-shadow:
+      0 0 0 1px rgba(99, 102, 241, 0.35),
+      0 0 30px rgba(99, 102, 241, 0.15),
+      0 0 55px rgba(168, 85, 247, 0.08);
+  }
+}
