@@ -1,7 +1,9 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import {
   Home,
-  DecodeZone,
+  DecodeZoneHub,
+  TopicPage,
+  Resources,
   SignalAlerts,
   SignalCheck,
   SignalReport,
@@ -14,7 +16,9 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/decode-zone" element={<DecodeZone />} />
+        <Route path="/decode-zone" element={<DecodeZoneHub />} />
+        <Route path="/decode-zone/:slug" element={<TopicPage />} />
+        <Route path="/resources" element={<Resources />} />
         <Route path="/signal-alerts" element={<SignalAlerts />} />
         <Route path="/signal-check" element={<SignalCheck />} />
         <Route path="/signal-report" element={<SignalReport />} />
