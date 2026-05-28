@@ -10,6 +10,7 @@ const links = [
   { to: '/signal-alerts', label: 'Signal Alerts', Icon: IconAlert },
   { to: '/signal-check', label: 'Signal Check', Icon: IconQuiz },
   { to: '/signal-shield', label: 'Signal Shield', Icon: IconShield },
+  { to: '/resources', label: 'Resources', Icon: IconShield },
 ]
 
 export default function NavBar() {
