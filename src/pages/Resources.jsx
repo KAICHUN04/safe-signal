@@ -2,7 +2,7 @@ const helplines = [
   {
     id: 'talian-kasih',
     name: 'Talian Kasih 15999',
-    role: 'National welfare helpline (KPWKM) — abuse, family crisis, child protection.',
+    role: 'National welfare helpline operated by KPWKM. Covers abuse, family crisis, and child protection.',
     contact: [
       { label: 'Call', value: '15999', href: 'tel:15999' },
       {
@@ -20,7 +20,7 @@ const helplines = [
   {
     id: 'cyber999',
     name: 'Cyber999 (CyberSecurity Malaysia)',
-    role: 'National point of contact for cyber incidents — account hacks, fraud, phishing, online abuse.',
+    role: 'National point of contact for cyber incidents, including account hacks, fraud, phishing, and online abuse.',
     contact: [
       { label: 'Hotline', value: '1-300-88-2999', href: 'tel:1300882999' },
       { label: 'Mobile (24/7)', value: '+60 19-266 5850', href: 'tel:+60192665850' },
@@ -32,7 +32,7 @@ const helplines = [
     ],
     hours: 'Business hours hotline; 24/7 mobile line',
     source: {
-      title: 'Cyber999 — CyberSecurity Malaysia',
+      title: 'Cyber999 (CyberSecurity Malaysia)',
       url: 'https://www.cybersecurity.my/portal-main/services/cyber999-overview',
     },
   },
@@ -52,7 +52,7 @@ const helplines = [
         href: 'https://www.mcmc.gov.my/',
       },
     ],
-    hours: 'Online portal — anytime',
+    hours: 'Online portal, available at any time',
     source: {
       title: 'MCMC official site',
       url: 'https://www.mcmc.gov.my/',
@@ -61,7 +61,7 @@ const helplines = [
   {
     id: 'pdrm',
     name: 'PDRM (Royal Malaysia Police)',
-    role: 'For crimes — sextortion, threats, fraud, abuse. Lodge a police report at the nearest balai polis or online.',
+    role: 'For criminal matters such as sextortion, threats, fraud, and abuse. Lodge a police report at the nearest balai polis or online.',
     contact: [
       { label: 'Emergency', value: '999', href: 'tel:999' },
       {
@@ -113,7 +113,7 @@ const helplines = [
   },
   {
     id: 'unicef-malaysia',
-    name: 'UNICEF Malaysia — further reading',
+    name: 'UNICEF Malaysia (further reading)',
     role: 'Research and parent/teen guidance on online child safety in Malaysia.',
     contact: [
       {
@@ -141,8 +141,9 @@ export default function Resources() {
             </span>
           </h1>
           <p className="mt-3 text-slate-300">
-            Real, verified support channels in Malaysia. Free. Many are open
-            24/7. You will not get in trouble for asking for help.
+            Verified support channels in Malaysia. All are free of charge,
+            and many operate 24 hours a day. You will not be penalised for
+            seeking help.
           </p>
         </div>
 
@@ -197,9 +198,9 @@ export default function Resources() {
             If you are in immediate danger
           </div>
           <p className="mt-2 text-sm text-slate-200">
-            Call 999. Tell a trusted adult — a parent, teacher, school
-            counsellor, or any adult you trust. Asking for help is a sign of
-            strength, not weakness.
+            Call 999. Speak to a trusted adult such as a parent, teacher,
+            school counsellor, or any other adult in whom you have confidence.
+            Asking for help is a sign of strength, not weakness.
           </p>
         </div>
       </div>

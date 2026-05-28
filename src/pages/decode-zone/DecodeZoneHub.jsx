@@ -12,8 +12,9 @@ export default function DecodeZoneHub() {
             </span>
           </h1>
           <p className="mt-3 text-slate-300">
-            Real threats teens face online, explained with research and real
-            cases. Pick a topic to learn the red flags and what to do.
+            Detailed guidance on the online threats most relevant to young
+            people in Malaysia, supported by research and real cases. Select a
+            topic to review the warning signs and the recommended response.
           </p>
         </div>
 
@@ -40,8 +41,9 @@ export default function DecodeZoneHub() {
             Need help right now?
           </div>
           <p className="mt-2 text-sm text-slate-200">
-            If you or a friend are in trouble, do not wait. Reach out to a
-            trusted adult or a Malaysian helpline.
+            If you or a friend are facing a difficult situation, please do
+            not wait. Speak to a trusted adult or contact a Malaysian
+            helpline.
           </p>
           <div className="mt-4">
             <Link

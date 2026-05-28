@@ -2,11 +2,11 @@ const topic = {
   slug: 'grooming',
   title: 'Online Grooming',
   hubBlurb:
-    'How predators build fake trust, push past boundaries, and isolate teens online — and how to spot it early.',
+    'How predators build false trust, push past boundaries, and isolate young people online, and how to recognise the signs early.',
   summary:
-    'Online grooming is when an adult slowly builds a relationship with a young person online so they can sexually exploit or abuse them. It usually does not start with anything obviously creepy — it starts with attention, compliments, and small talk. Then it escalates.',
+    'Online grooming is the process by which an adult slowly builds a relationship with a young person online in order to sexually exploit or abuse them. It rarely begins with anything obviously inappropriate. It usually begins with attention, compliments, and casual conversation. The behaviour then escalates over time.',
   scale: {
-    text: 'UNICEF, INTERPOL and ECPAT estimate that around 100,000 children aged 12–17 in Malaysia may be subjected to online sexual exploitation or abuse every year.',
+    text: 'UNICEF, INTERPOL and ECPAT estimate that approximately 100,000 children aged 12 to 17 in Malaysia may be subjected to online sexual exploitation or abuse every year.',
     source: {
       title: 'Disrupting Harm in Malaysia (2022)',
       publisher: 'UNICEF Malaysia',
@@ -14,18 +14,18 @@ const topic = {
     },
   },
   redFlags: [
-    'Fast trust: heavy compliments very early ("you\'re so mature for your age").',
-    'They want to move you off the public app onto private chat (Telegram, WhatsApp, Discord DMs).',
-    'They ask about your daily routine, school, and when you are home alone.',
-    'They push small requests first — a selfie, then a more revealing one.',
-    '"Don\'t tell anyone about us." Secrecy is a huge red flag.',
-    'Gifts: top-ups, skins, e-wallet credit, Shopee vouchers in exchange for "favours".',
-    'Guilt-tripping or threats when you say no.',
+    'Excessive compliments very early in a conversation, particularly comments about your maturity or appearance.',
+    'Pressure to move the conversation off a public platform onto private messaging such as Telegram, WhatsApp, or Discord direct messages.',
+    'Questions about your daily routine, school, and when you are home alone.',
+    'Small requests that gradually escalate, beginning with a selfie and progressing to more revealing images.',
+    'Instructions to keep the relationship a secret from family or friends.',
+    'Offers of gifts in exchange for favours, including mobile top-ups, in-game items, e-wallet credit, or shopping vouchers.',
+    'Guilt-tripping, manipulation, or threats when you decline a request.',
   ],
   caseStudy: {
     title: 'Predator In My Phone',
     summary:
-      'R.AGE journalists at The Star spent six months posing as underage girls on Malaysian chat apps. They were approached by dozens of adult men within days, many escalating to explicit requests and offers to meet within hours. The series helped push Malaysia to introduce anti-grooming provisions in the Sexual Offences Against Children Act 2017.',
+      'Journalists from R.AGE at The Star spent six months posing as underage girls on Malaysian chat applications. They were approached by dozens of adult men within days, and many of these conversations escalated to explicit requests and offers to meet in person within hours. The investigation contributed to the introduction of anti-grooming provisions in the Sexual Offences Against Children Act 2017.',
     source: {
       title: 'Predator In My Phone (R.AGE / The Star)',
       publisher: 'R.AGE',
@@ -36,22 +36,22 @@ const topic = {
     {
       step: 'Stop',
       detail:
-        'You don\'t owe anyone a reply. Stop responding the moment something feels off.',
+        'You are not obligated to reply. Stop responding the moment a conversation feels inappropriate.',
     },
     {
       step: 'Save',
       detail:
-        'Screenshot the chat, their profile, and their username before blocking. Save the link.',
+        'Capture screenshots of the chat, the profile, and the username before blocking the account, and save the profile link.',
     },
     {
       step: 'Block',
       detail:
-        'Block on every platform they could reach you. Use the in-app "Report" option too.',
+        'Block the account on every platform where they could reach you, and use the in-app report function to flag the account to the platform.',
     },
     {
       step: 'Tell',
       detail:
-        'Tell a trusted adult. If you cannot, call Talian Kasih 15999 or WhatsApp 019-261 5999 — free, 24/7.',
+        'Speak to a trusted adult. If you are unable to, contact Talian Kasih on 15999 or via WhatsApp at 019-261 5999. The service is free and operates 24 hours, 7 days a week.',
     },
   ],
   helplineHighlight: 'talian-kasih',

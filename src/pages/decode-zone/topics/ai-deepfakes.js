@@ -2,29 +2,29 @@ const topic = {
   slug: 'ai-deepfakes',
   title: 'AI Deepfakes & Voice-Clone Scams',
   hubBlurb:
-    'Fake nudes generated from normal photos, cloned voices begging for money, and AI-built fake people in your DMs.',
+    'Fabricated explicit images generated from ordinary photographs, cloned voices used to request money, and AI-generated fake profiles in your direct messages.',
   summary:
-    'Deepfakes are AI-generated images, videos, or voices that look and sound real. Anyone with a few of your social media photos can now generate a fake nude of you. Anyone with 10 seconds of your voice — from a TikTok or voice note — can clone it. Scammers and bullies are already using both.',
+    'Deepfakes are AI-generated images, videos, or voices that closely resemble the real subject. With only a small number of your social media photographs, anyone can now generate a fabricated explicit image of you. With only ten seconds of your voice from a TikTok or voice note, anyone can clone it. Scammers and bullies are already using both techniques.',
   scale: {
-    text: 'The FBI has formally warned that criminals are using generative AI to make fraud more convincing — including creating deepfake nudes of victims to use in sextortion, and cloning the voices of family members to demand emergency money transfers.',
+    text: 'The FBI has formally warned that criminals are using generative AI to make fraud more convincing. This includes the creation of deepfake explicit images of victims for use in sextortion, and the cloning of family members\' voices to request urgent money transfers.',
     source: {
-      title: 'Criminals Use Generative AI to Facilitate Financial Fraud (PSA, Dec 2024)',
+      title: 'Criminals Use Generative AI to Facilitate Financial Fraud (PSA, December 2024)',
       publisher: 'FBI IC3',
       url: 'https://www.ic3.gov/PSA/2024/PSA241203',
     },
   },
   redFlags: [
-    'A "nude" of you appears that you never took. Look at edges, hands, jewellery, background — deepfakes get those wrong.',
-    'A voice note "from your mum/dad/sibling" begging for money urgently, asking you to keep it secret.',
-    'A video call where the face barely blinks, the lighting on the face does not match the room, or the mouth lags behind the words.',
-    'A "girl" in your DMs whose photos look slightly too perfect, with no tagged friends or old posts.',
-    'They refuse to switch to a live video on a different app you choose.',
-    'Urgency + secrecy + money. Always the same combo.',
+    'An explicit image of you appears that you never produced. Inspect the edges, hands, jewellery, and background. Deepfakes typically render these elements incorrectly.',
+    'A voice note that appears to be from a family member requests money urgently and asks you to keep the request confidential.',
+    'A video call in which the face barely blinks, the lighting on the face does not match the room, or the audio lags behind the lip movement.',
+    'A profile in your direct messages whose photographs appear unusually polished, with no tagged friends or older posts.',
+    'The person refuses to switch to a live video call on a different platform that you select.',
+    'A combination of urgency, secrecy, and a request for money. This pattern is consistent across most scams.',
   ],
   caseStudy: {
-    title: 'Deepfake nudes of classmates — a school-level crime',
+    title: 'Deepfake images of classmates: a school-level crime',
     summary:
-      'In multiple countries — including high-profile cases in Spain, South Korea, and the U.S. — teen boys have used free AI apps to generate fake nude images of female classmates from their normal school photos, then shared them in group chats. The fake images cause the same real harm as real ones, and in most places they are now treated as a serious crime against the victim. The FBI confirms this pattern is being used in sextortion against teens too.',
+      'In several countries, including high-profile cases reported in Spain, South Korea, and the United States, teenage boys have used freely available AI applications to generate fabricated explicit images of female classmates from ordinary school photographs, and then circulated them in group chats. These images cause the same harm as authentic ones, and in most jurisdictions they are now treated as a serious offence against the victim. The FBI confirms that this same technique is being used in sextortion against teenagers.',
     source: {
       title: 'Criminals Use Generative AI to Facilitate Financial Fraud',
       publisher: 'FBI IC3',
@@ -35,27 +35,27 @@ const topic = {
     {
       step: 'Stop',
       detail:
-        'Do not panic-share or panic-pay. If a "family member" is asking for money urgently by voice, hang up and call them back on their real number.',
+        'Do not act on impulse and do not pay. If a person claiming to be a family member is requesting money urgently by voice, end the call and ring them back on their verified number.',
     },
     {
       step: 'Save',
       detail:
-        'Save the file, the link, and the account that sent or posted it. You will need this evidence.',
+        'Save the file, the link, and the account that sent or posted it. This evidence will be required for any report.',
     },
     {
       step: 'Block',
       detail:
-        'Report and block on the platform. If a fake nude of you is online, submit it to StopNCII.org so participating platforms can take it down.',
+        'Report and block the account on the platform. If a fabricated image of you is online, submit it to StopNCII.org so that participating platforms can assist in removing it.',
     },
     {
       step: 'Tell',
       detail:
-        'Tell a trusted adult. Report to Cyber999 and to PDRM. A fake image of you is still abuse of you.',
+        'Speak to a trusted adult. Report the incident to Cyber999 and to the Royal Malaysia Police (PDRM). A fabricated image of you is still a form of abuse against you.',
     },
   ],
   extraTools: [
     {
-      label: 'StopNCII.org — take down deepfake or real intimate images',
+      label: 'StopNCII.org (removal of deepfake or authentic intimate images)',
       url: 'https://stopncii.org/',
     },
   ],

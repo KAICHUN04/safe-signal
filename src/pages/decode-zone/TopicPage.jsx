@@ -9,7 +9,7 @@ function SourceLink({ source }) {
       rel="noreferrer"
       className="text-indigo-300 underline decoration-indigo-400/40 underline-offset-2 hover:text-indigo-200"
     >
-      {source.title} — {source.publisher}
+      {source.title} ({source.publisher})
     </a>
   )
 }
@@ -80,7 +80,7 @@ export default function TopicPage() {
         </div>
 
         <h2 className="mt-10 text-lg font-extrabold text-white">
-          What to do — Stop, Save, Block, Tell
+          What to do: Stop, Save, Block, Tell
         </h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
           {topic.whatToDo.map((p) => (
@@ -125,8 +125,8 @@ export default function TopicPage() {
             Where to get help
           </div>
           <p className="mt-2 text-sm text-slate-200">
-            If something has happened, or is happening right now, you are not
-            alone and you are not in trouble. Reach out:
+            If something has happened, or is happening at this moment, you are
+            not alone and you are not in trouble. Support is available.
           </p>
           <div className="mt-4">
             <Link
