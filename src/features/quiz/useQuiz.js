@@ -8,6 +8,8 @@ export function useQuiz() {
   const total = scenarios.length
   const [idx, setIdx] = useState(0)
   const [score, setScore] = useState(0)
+  const [streak, setStreak] = useState(0)
+  const [bestStreak, setBestStreak] = useState(0)
   const [answers, setAnswers] = useState(() => [])
   const current = scenarios[idx]
 
@@ -18,12 +20,29 @@ export function useQuiz() {
 
   function answer(choiceId) {
     const isCorrect = choiceId === current.correctChoiceId
+
     setAnswers((prev) => [
       ...prev,
       { scenarioId: current.id, choiceId, isCorrect },
     ])
-    if (isCorrect) setScore((s) => s + 1)
-    return { isCorrect, explanation: current.explanation, correctChoiceId: current.correctChoiceId }
+
+    if (isCorrect) {
+      setScore((s) => s + 1)
+      setStreak((s) => {
+        const next = s + 1
+        setBestStreak((b) => Math.max(b, next))
+        return next
+      })
+    } else {
+      setStreak(0)
+    }
+
+    return {
+      isCorrect,
+      explanation: current.explanation,
+      correctChoiceId: current.correctChoiceId,
+      didYouKnow: current.didYouKnow ?? null,
+    }
   }
 
   function next() {
@@ -37,6 +56,8 @@ export function useQuiz() {
   function reset() {
     setIdx(0)
     setScore(0)
+    setStreak(0)
+    setBestStreak(0)
     setAnswers([])
     remove(STORAGE_KEY)
   }
@@ -46,6 +67,7 @@ export function useQuiz() {
       completedAt: Date.now(),
       total,
       score,
+      bestStreak,
       answers,
     }
     writeJSON(STORAGE_KEY, result)
@@ -56,6 +78,8 @@ export function useQuiz() {
     idx,
     total,
     score,
+    streak,
+    bestStreak,
     answers,
     current,
     progress,
@@ -70,4 +94,3 @@ export function useQuiz() {
 export function readLastResult() {
   return readJSON(STORAGE_KEY, null)
 }
-

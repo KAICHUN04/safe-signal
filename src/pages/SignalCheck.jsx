@@ -62,7 +62,8 @@ function SignalCheckInner() {
     if (feedback) return
 
     setSelected(choiceId)
-    setFeedback(quiz.answer(choiceId))
+    const result = quiz.answer(choiceId)
+    setFeedback(result)
   }
 
   function next() {
@@ -112,8 +113,15 @@ function SignalCheckInner() {
                 </div>
                 <div className="text-xs text-slate-400">Read carefully</div>
               </div>
-              <div className="ml-auto hidden text-sm font-bold text-indigo-200 sm:block">
-                Score: {quiz.score}
+              <div className="ml-auto flex items-center gap-3">
+                <div className="hidden text-sm font-bold text-indigo-200 sm:block">
+                  Score: {quiz.score}
+                </div>
+                {quiz.streak >= 2 && (
+                  <div className="flex items-center gap-1 rounded-full bg-orange-500/20 px-3 py-1 text-xs font-extrabold text-orange-300 ring-1 ring-orange-400/30">
+                    🔥 {quiz.streak} streak
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -241,7 +249,19 @@ function SignalCheckInner() {
               )
             })}
           </div>
-
+          
+          {/* Did You Know */}
+          {isAnswered && feedback?.didYouKnow && (
+            <div className="rounded-3xl bg-indigo-500/10 p-4 ring-1 ring-indigo-400/20">
+              <div className="flex items-start gap-3">
+                <span className="text-lg">💡</span>
+                <p className="text-xs leading-relaxed text-indigo-200">
+                  {feedback.didYouKnow}
+                </p>
+              </div>
+            </div>
+          )}
+          
           {/* Next */}
           <div className="pt-2">
             <button

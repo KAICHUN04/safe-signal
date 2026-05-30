@@ -16,29 +16,33 @@ export const scenarios = [
     correctChoiceId: 'b',
     explanation:
       'Requests for photos—especially secret ones—are a common grooming tactic. The safest move is to stop, save evidence, block/report, and tell a trusted adult.',
+    didYouKnow:
+      'Did you know? Once an image is sent online, you permanently lose control of it. It can be shared, edited, or used against you — even years later.',
   },
   {
     id: 'info-1',
     title: 'Personal info request',
     messages: [
       { from: 'them', text: 'what school do you go to?' },
-      { from: 'them', text: 'and what’s your last name? just curious' },
+      { from: 'them', text: 'and what is your last name? just curious' },
     ],
     choices: [
       { id: 'a', text: 'Share details so they trust you.' },
       { id: 'b', text: 'Keep it vague and change the subject.' },
-      { id: 'c', text: 'Don’t share. End the chat and report if needed.' },
+      { id: 'c', text: 'Do not share. End the chat and report if needed.' },
     ],
     correctChoiceId: 'c',
     explanation:
-      'Personal info can be used to find you offline or impersonate you. You don’t owe anyone private details—especially someone you only know online.',
+      'Personal info can be used to find you offline or impersonate you. You do not owe anyone private details—especially someone you only know online.',
+    didYouKnow:
+      'Did you know? With just your name, school, and suburb — a stranger can find your daily routine, your home, and your family within minutes.',
   },
   {
     id: 'emotion-1',
     title: 'Emotional manipulation',
     messages: [
-      { from: 'them', text: 'wow… everyone leaves me. i guess you will too.' },
-      { from: 'them', text: 'if you cared you’d stay on call tonight' },
+      { from: 'them', text: 'wow everyone leaves me. i guess you will too.' },
+      { from: 'them', text: 'if you cared you would stay on call tonight' },
     ],
     choices: [
       { id: 'a', text: 'Stay because you feel guilty.' },
@@ -48,118 +52,138 @@ export const scenarios = [
     correctChoiceId: 'b',
     explanation:
       'Guilt and pressure are manipulation tools. Healthy friends respect boundaries—unsafe people punish you for having them.',
+    didYouKnow:
+      'Did you know? Making you feel responsible for their emotions is a deliberate tactic called emotional coercion — it is one of the most common early grooming strategies.',
   },
   {
     id: 'friendship-1',
     title: 'Fake friendship building',
     messages: [
-      { from: 'them', text: 'you’re different from everyone else' },
+      { from: 'them', text: 'you are different from everyone else' },
       { from: 'them', text: 'we should keep our friendship special. no one needs to know' },
     ],
     choices: [
-      { id: 'a', text: 'Agree to keep it secret to be “special”.' },
+      { id: 'a', text: 'Agree to keep it secret to be special.' },
       { id: 'b', text: 'Ask to meet them alone to prove you trust them.' },
       { id: 'c', text: 'Keep things public and involve a trusted adult if it feels off.' },
     ],
     correctChoiceId: 'c',
     explanation:
-      '“Special secrets” can be a trap. Safe relationships don’t require secrecy or isolation from your support system.',
+      'Special secrets can be a trap. Safe relationships do not require secrecy or isolation from your support system.',
+    didYouKnow:
+      'Did you know? Predators spend an average of 3 weeks building trust before attempting to isolate a victim from their friends and family.',
   },
   {
     id: 'private-app-1',
     title: 'Move to private apps',
     messages: [
       { from: 'them', text: 'can you switch to a private app? my messages disappear there' },
-      { from: 'them', text: 'it’s safer 😉' },
+      { from: 'them', text: 'it is safer 😉' },
     ],
     choices: [
-      { id: 'a', text: 'Switch immediately so they don’t get mad.' },
+      { id: 'a', text: 'Switch immediately so they do not get mad.' },
       { id: 'b', text: 'Keep it on the current platform where you can report.' },
       { id: 'c', text: 'Turn on disappearing messages too.' },
     ],
     correctChoiceId: 'b',
     explanation:
       'Moving to private apps and disappearing messages reduces accountability and can make it harder to report. Staying on-platform helps you keep evidence and use safety tools.',
+    didYouKnow:
+      'Did you know? 89% of sexual solicitations of teens happen in chat apps and DMs — predators deliberately seek out platforms with less moderation.',
   },
   {
-    id: 'secrets-1',
-    title: 'Secret keeping requests',
+    id: 'meetup-1',
+    title: 'Stranger wants to meet in person',
     messages: [
-      { from: 'them', text: 'don’t tell anyone about this… please' },
-      { from: 'them', text: 'if you do, you’ll ruin everything' },
+      { from: 'them', text: 'we have been talking for 2 weeks now, i feel like i really know you 🥺' },
+      { from: 'them', text: 'lets meet at the mall this saturday. just us, it will be fun!' },
     ],
     choices: [
-      { id: 'a', text: 'Agree and keep it secret to avoid problems.' },
-      { id: 'b', text: 'Stop replying and tell a trusted adult if it continues.' },
-      { id: 'c', text: 'Send screenshots to them so you prove you’re serious.' },
+      { id: 'a', text: 'Agree — you have been talking for a while so it feels safe.' },
+      { id: 'b', text: 'Say maybe and ask a friend to secretly come along.' },
+      { id: 'c', text: 'Decline and tell a trusted adult about the request.' },
+      { id: 'd', text: 'Ask them to video call first before deciding.' },
     ],
-    correctChoiceId: 'b',
+    correctChoiceId: 'c',
     explanation:
-      '“Don’t tell” and threats are red flags. You deserve support—stop the pressure and reach out to a trusted adult.',
+      'Two weeks of online chatting does not mean you truly know someone. Predators build false trust quickly on purpose. Never agree to meet an online stranger alone — decline and immediately tell a trusted adult.',
+    didYouKnow:
+      'Did you know? In most reported cases of online predatory behaviour, the predator asked to meet in person within the first month of contact.',
   },
   {
-    id: 'gifts-1',
-    title: 'Gifts / rewards manipulation',
+    id: 'age-lie-1',
+    title: 'Someone reveals they are much older',
     messages: [
-      { from: 'them', text: 'i can get you a gift if you do me a favor' },
-      { from: 'them', text: 'it’s a quick thing. then we’ll be “close”' },
+      { from: 'them', text: 'ok i have to be honest with you… i am actually 27, not 16.' },
+      { from: 'them', text: 'but age is just a number right? i feel more connected to you than anyone my age 💙' },
     ],
     choices: [
-      { id: 'a', text: 'Do the favor to earn the gift.' },
-      { id: 'b', text: 'Refuse and end the chat. Report if it feels unsafe.' },
-      { id: 'c', text: 'Ask for the gift details so you can negotiate.' },
+      { id: 'a', text: 'Feel flattered — an older person choosing to talk to you is a compliment.' },
+      { id: 'b', text: 'Keep talking but be more careful from now on.' },
+      { id: 'c', text: 'End the conversation, block them, and tell a trusted adult.' },
+      { id: 'd', text: 'Ask them why they lied about their age before deciding.' },
     ],
-    correctChoiceId: 'b',
+    correctChoiceId: 'c',
     explanation:
-      'Gifts can be used to create control or “debt.” Unsafe people may punish you for saying no—refuse and report.',
+      'An adult who lies about their age to befriend a teenager online is a serious red flag. Age is just a number is a manipulation line. This person broke your trust deliberately — block, report, and tell a trusted adult right away.',
+    didYouKnow:
+      'Did you know? Studies show that most online predators deliberately misrepresent their age, gender, or appearance during the early stages of grooming.',
   },
   {
-    id: 'private-group-1',
-    title: 'Move the conversation to DMs / private groups',
+    id: 'fake-giveaway-1',
+    title: 'Suspicious giveaway asking for your password',
     messages: [
-      { from: 'them', text: 'join my private server so no one can see' },
-      { from: 'them', text: 'i’ll send you something there' },
+      { from: 'them', text: '🎉 CONGRATS! You have been selected for a FREE 10,000 Robux giveaway!' },
+      { from: 'them', text: 'Just DM us your username and password to verify your account. Hurry — only 10 spots left! ⏰' },
     ],
     choices: [
-      { id: 'a', text: 'Join immediately because it seems harmless.' },
-      { id: 'b', text: 'Stay public/inside the app tools where reporting is available.' },
-      { id: 'c', text: 'Share your username and invite link to prove you trust them.' },
+      { id: 'a', text: 'Send your username and password quickly before spots run out.' },
+      { id: 'b', text: 'Send only your username but not your password.' },
+      { id: 'c', text: 'Ignore it — no real giveaway ever asks for your password.' },
+      { id: 'd', text: 'Ask your friends if they got the same message first.' },
     ],
-    correctChoiceId: 'b',
+    correctChoiceId: 'c',
     explanation:
-      'Private spaces can hide wrongdoing and reduce your ability to report. Use platform safety tools and keep boundaries.',
+      'No legitimate giveaway ever needs your password — ever. This is account theft disguised as a prize. Sharing your password gives strangers full access to your account and any personal information linked to it. Ignore, report, and warn friends.',
+    didYouKnow:
+      'Did you know? Fake giveaway scams are the number one way teenagers lose access to their gaming accounts. Once your password is stolen, recovery is very difficult.',
   },
   {
-    id: 'emotional-1',
-    title: 'Emotional guilt trip',
+    id: 'impersonation-1',
+    title: 'Someone claims to be a famous person',
     messages: [
-      { from: 'them', text: 'after everything i did, you’re ignoring me?' },
-      { from: 'them', text: 'if you really cared, you would…' },
+      { from: 'them', text: 'hey it is actually me [famous streamer]. this is my private account 🎮' },
+      { from: 'them', text: 'i am selecting fans for an exclusive group. send me your number so i can add you 📲' },
     ],
     choices: [
-      { id: 'a', text: 'Apologize and do what they ask.' },
-      { id: 'b', text: 'Say you’re not comfortable, stop replying, and talk to a trusted adult if needed.' },
-      { id: 'c', text: 'Wait quietly until they calm down.' },
+      { id: 'a', text: 'Send your number — this could be a real opportunity!' },
+      { id: 'b', text: 'Ask them to prove it by posting something on their main account.' },
+      { id: 'c', text: 'Ignore the message and report the account for impersonation.' },
+      { id: 'd', text: 'Share it with friends to see if they think it is real.' },
     ],
-    correctChoiceId: 'b',
+    correctChoiceId: 'c',
     explanation:
-      'Guilt is a manipulation tactic. Healthy people won’t punish you for boundaries—pause and seek support.',
+      'Famous people do not contact random fans from secret accounts asking for phone numbers. This is impersonation — a common tactic to collect personal contact details. Report the account and never share your phone number with strangers online.',
+    didYouKnow:
+      'Did you know? There are thousands of fake celebrity accounts active on social media at any given time. Platforms remove millions of impersonation accounts every year.',
   },
   {
-    id: 'threats-1',
-    title: 'Threats if you report or tell',
+    id: 'survey-1',
+    title: 'Suspicious online survey or form',
     messages: [
-      { from: 'them', text: 'if you tell, i’ll expose you online' },
-      { from: 'them', text: 'don’t make this worse for yourself' },
+      { from: 'them', text: 'hey fill out this quick survey for a school cyber safety project! 📋' },
+      { from: 'them', text: 'it asks for your name, age, school, address and daily routine. takes 2 mins!' },
     ],
     choices: [
-      { id: 'a', text: 'Believe the threat and keep everything secret.' },
-      { id: 'b', text: 'Save evidence, block/report, and tell a trusted adult.' },
-      { id: 'c', text: 'Argue with them to stop the threat.' },
+      { id: 'a', text: 'Fill it out — it sounds like a legitimate school project.' },
+      { id: 'b', text: 'Fill in only your name and age but skip the rest.' },
+      { id: 'c', text: 'Refuse and report — no real survey needs your address and daily routine.' },
+      { id: 'd', text: 'Ask the sender which school they are from before deciding.' },
     ],
-    correctChoiceId: 'b',
+    correctChoiceId: 'c',
     explanation:
-      'Threats are serious. Don’t negotiate. Save evidence, block/report, and tell a trusted adult or local support.',
+      'Collecting your address and daily routine gives someone the information to physically locate and track you. Legitimate school surveys never ask for home addresses or daily schedules. This is a data harvesting tactic — refuse, report the link, and tell a trusted adult.',
+    didYouKnow:
+      'Did you know? Data harvesting through fake forms and surveys is one of the fastest growing online threats targeting teenagers — your daily routine alone is enough to track your movements.',
   },
 ]
-
