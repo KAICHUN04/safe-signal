@@ -2,15 +2,22 @@ import { NavLink } from 'react-router-dom'
 import { cn } from '../lib/cn'
 import Container from './Container'
 import LogoMark from './LogoMark'
-import { IconAlert, IconBook, IconHome, IconQuiz, IconShield } from './icons'
+import {
+  IconAlert,
+  IconBook,
+  IconHome,
+  IconLink,
+  IconQuiz,
+  IconShield,
+} from './icons'
 
 const links = [
   { to: '/', label: 'Home', Icon: IconHome },
   { to: '/decode-zone', label: 'Decode Zone', Icon: IconBook },
   { to: '/signal-alerts', label: 'Signal Alerts', Icon: IconAlert },
   { to: '/signal-check', label: 'Signal Check', Icon: IconQuiz },
-  { to: '/signal-shield', label: 'Signal Shield', Icon: IconBook },
-  { to: '/resources', label: 'Resources', Icon: IconShield },
+  { to: '/signal-shield', label: 'Signal Shield', Icon: IconShield },
+  { to: '/resources', label: 'Resources', Icon: IconLink },
 ]
 
 export default function NavBar() {

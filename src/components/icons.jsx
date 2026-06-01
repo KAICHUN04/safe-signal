@@ -116,3 +116,30 @@ export function IconShield(props) {
   )
 }
 
+export function IconLink(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M10.2 13.8 9.1 14.9a3.6 3.6 0 0 1-5.1 0 3.6 3.6 0 0 1 0-5.1l1.1-1.1a3.6 3.6 0 0 1 5.1 0"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.8 10.2 14.9 9.1a3.6 3.6 0 0 1 5.1 0 3.6 3.6 0 0 1 0 5.1l-1.1 1.1a3.6 3.6 0 0 1-5.1 0"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.6 14.4 14.4 9.6"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
