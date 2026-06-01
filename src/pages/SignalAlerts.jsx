@@ -5,6 +5,10 @@ export default function SignalAlerts() {
     {
       id: 'selfies',
       label: 'Asking for selfies',
+      badge: {
+        text: 'Grooming Behavior',
+        className: 'bg-rose-500/10 text-rose-200 ring-1 ring-rose-400/20',
+      },
       messages: [
         { from: 'them', text: 'send a selfie rn 👀' },
         { from: 'them', text: 'no face is fine… just something' },
@@ -15,6 +19,10 @@ export default function SignalAlerts() {
     {
       id: 'personal-info',
       label: 'Personal info requests',
+      badge: {
+        text: 'Privacy Risk',
+        className: 'bg-sky-500/10 text-sky-200 ring-1 ring-sky-400/20',
+      },
       messages: [
         { from: 'them', text: 'what’s your full name + school?' },
         { from: 'them', text: 'drop your address so i can send you a gift' },
@@ -25,6 +33,10 @@ export default function SignalAlerts() {
     {
       id: 'secrets',
       label: 'Secret keeping',
+      badge: {
+        text: 'Behavioral Trap',
+        className: 'bg-amber-500/10 text-amber-200 ring-1 ring-amber-400/20',
+      },
       messages: [
         { from: 'them', text: 'don’t tell anyone about us' },
         { from: 'them', text: 'they wouldn’t understand' },
@@ -35,6 +47,10 @@ export default function SignalAlerts() {
     {
       id: 'private-apps',
       label: 'Moving to private apps',
+      badge: {
+        text: 'Isolation Tactic',
+        className: 'bg-fuchsia-500/10 text-fuchsia-200 ring-1 ring-fuchsia-400/20',
+      },
       messages: [
         { from: 'them', text: 'switch to a private app. this one is monitored' },
         { from: 'them', text: 'we can use disappearing messages' },
@@ -45,6 +61,10 @@ export default function SignalAlerts() {
     {
       id: 'gifts',
       label: 'Gifts / rewards manipulation',
+      badge: {
+        text: 'Grooming Behavior',
+        className: 'bg-rose-500/10 text-rose-200 ring-1 ring-rose-400/20',
+      },
       messages: [
         { from: 'them', text: 'i’ll buy you skins if you do me a favor' },
         { from: 'them', text: 'you owe me after i helped you' },
@@ -80,7 +100,9 @@ export default function SignalAlerts() {
             <div
               key={flag.id}
               className={[
-                'group self-start rounded-3xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur-sm transition',
+                'group self-start rounded-3xl bg-white/5 p-5 backdrop-blur-sm',
+                'border border-white/10',
+                'cursor-pointer transition-all duration-200 hover:scale-[1.01] hover:border-purple-500',
                 openId === flag.id ? 'neon-ring' : '',
               ]
                 .filter(Boolean)
@@ -98,8 +120,13 @@ export default function SignalAlerts() {
                       {flag.label}
                     </div>
                   </div>
-                  <div className="rounded-full bg-rose-500/15 px-3 py-1 text-xs font-bold text-rose-200 ring-1 ring-rose-400/20">
-                    Warning
+                  <div
+                    className={[
+                      'rounded-full px-3 py-1 text-xs font-bold',
+                      flag.badge?.className ?? 'bg-white/5 text-slate-200 ring-1 ring-white/10',
+                    ].join(' ')}
+                  >
+                    {flag.badge?.text ?? 'Warning'}
                   </div>
                 </div>
               </button>
