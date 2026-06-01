@@ -86,6 +86,14 @@ function SignalCheckInner() {
     <section className="py-12 sm:py-16">
       <Container>
         <div className="space-y-5">
+          <div className="max-w-2xl">
+            <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+              <span className="bg-gradient-to-r from-indigo-200 to-fuchsia-200 bg-clip-text text-transparent">
+                Signal Check
+              </span>
+            </h1>
+          </div>
+
           {/* Progress header */}
           <div>
             <div className="text-xs font-semibold text-slate-300">

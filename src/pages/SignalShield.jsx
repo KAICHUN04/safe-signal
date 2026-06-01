@@ -23,7 +23,7 @@ export default function SignalShield() {
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-            <span className="bg-gradient-to-r from-emerald-200 to-cyan-200 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-200 to-fuchsia-200 bg-clip-text text-transparent">
               Signal Shield
             </span>
           </h1>
