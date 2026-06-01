@@ -31,59 +31,29 @@ to create a modern and engaging cybersecurity awareness experience.
 
 # 🖥️ Features
 
-## 🏠 Home Dashboard
-- Modern responsive landing page
-- Interactive call-to-action sections
-- Cybersecurity awareness branding
+🏠 Home Dashboard
+* Modern responsive landing page engineered with a dark mode dashboard layout.
+* Clear visual gateways directing target users (teenagers) into educational zones.
 
----
+📖 Decode Zone
+* High-level analytical overview breaking down the exact mechanics of digital manipulation.
+* Teaches tactical safety structures through immediate, scannable documentation.
 
-## 📖 Decode Zone
-Educational content covering:
-- Grooming tactics
-- Online predators
-- Digital footprints
-- Privacy awareness
-- Safe online behavior
+🚨 Signal Alerts
+* Interactive hazard dashboard mapping out real-world threat indicators.
+* Displays localized examples featuring micro-chat snippets and custom threat level badges (e.g., "Grooming Behavior", "Privacy Risk") to expose online manipulation tactics.
 
----
+🎮 Signal Check
+* A gamified, scenario-based cybersecurity quiz simulator.
+* Puts users directly inside realistic online chat interfaces where their conversational decisions dictate their safety score.
 
-## 🚨 Signal Alerts
-Interactive red flag examples using realistic chat-style interfaces:
-- Requests for selfies
-- Asking for personal information
-- Emotional manipulation
-- Requests to keep secrets
-- Moving conversations to private platforms
+🛡️ Signal Shield
+* An actionable safety framework built to empower young users to take control.
+* Instructs teens on exact defensive sequences: Stop ➔ Save ➔ Block ➔ Tell.
 
----
-
-## 🎮 Signal Check
-Gamified scenario-based quiz system featuring:
-- Realistic online chat simulations
-- Multiple-choice decision making
-- Score tracking
-- Immediate feedback and explanations
-- Progress indicators
-- Safety evaluation
-
----
-
-## 📊 Signal Report
-Results and performance analysis:
-- Final score display
-- Safety rating
-- Strengths and improvement advice
-- Achievement badges
-
----
-
-## 🛡️ Signal Shield
-Safety and support resources:
-- Steps to handle suspicious interactions
-- Reporting and blocking guidance
-- Encouragement to contact trusted adults
-- Support message templates
+🔗 Resources
+* A verified directory mapping local, structural support networks within Malaysia.
+* Provides direct contact access, hotlines, and web reporting portals for emergency channels including Talian Kasih, Cyber999, MCMC, and PDRM.
 
 ---
 
