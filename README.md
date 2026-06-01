@@ -2,6 +2,7 @@
 ### Spot the signs. Stay safe online.
 
 Safe Signal is an interactive cybersecurity awareness website designed to educate teenagers (ages 13–18) about online predators, grooming behaviors, digital privacy, and safe online practices through engaging educational content and gamified scenario-based learning.
+
 https://safe-signal-iota.vercel.app/
 
 ---
