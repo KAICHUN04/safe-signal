@@ -97,9 +97,6 @@ export default function SignalAlerts() {
                     <div className="text-sm font-extrabold text-white">
                       {flag.label}
                     </div>
-                    <div className="mt-1 text-xs text-slate-400">
-                      Discord/IG-style example
-                    </div>
                   </div>
                   <div className="rounded-full bg-rose-500/15 px-3 py-1 text-xs font-bold text-rose-200 ring-1 ring-rose-400/20">
                     Warning
