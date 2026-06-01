@@ -9,7 +9,7 @@ const links = [
   { to: '/decode-zone', label: 'Decode Zone', Icon: IconBook },
   { to: '/signal-alerts', label: 'Signal Alerts', Icon: IconAlert },
   { to: '/signal-check', label: 'Signal Check', Icon: IconQuiz },
-  { to: '/signal-shield', label: 'Signal Shield', Icon: IconShield },
+  { to: '/signal-shield', label: 'Signal Shield', Icon: IconBook },
   { to: '/resources', label: 'Resources', Icon: IconShield },
 ]
 
